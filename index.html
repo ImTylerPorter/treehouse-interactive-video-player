@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Treehouse Interactive Video Player</title>
+    <link rel="stylesheet" href="assets/css/main.css">
+  </head>
+  <body>
+    <main>
+
+      <div class="video-player">
+        <video id="video-screen">
+          <source src="assets/video/video.mp4" type="video/mp4">
+          <source src="assets/video/video.ogg" type="video/ogg">
+          <track label="English" kind="subtitles" srclang="en" src="assets/video/captions.vtt">
+        </video>
+        <div class="controls">
+          <progress id="progress-bar" max="100" value="0"></progress>
+          <div id="video-buttons">
+            <button id="btn-play-pause"></button>
+            <span id="display-play-time"></span>
+            <button id="btn-mute-toggle"></button>
+            <button id="btn-full-screen"></button>
+          </div>
+        </div>
+      </div>
+      <section id="captions"></section>
+
+    </main>
+    <script type="text/javascript" src="assets/js/data.js"></script>
+    <script type="text/javascript" src="assets/js/app.js"></script>
+  </body>
+</html>
